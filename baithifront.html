@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelCard</title>
+    <link rel="stylesheet" href="baithifront.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="img-one">
+        <img src="C:\Users\LT\Desktop\image1.png" alt="" style="filter:brightness(50%)" height="1000" width="1340">
+    </div>
+    <div class="img-two">
+        <img src="C:\Users\LT\Desktop\image2.png" alt="" height="650" width="1100">
+     
+    </div>
+    <div class="img-three">
+        <img src="C:\Users\LT\Desktop\image3.png" alt=""height="650" width="550">
+    </div>
+    <div>
+        <h2 class="td">Hilton</h2>
+        <h3 class="td1"> P R E M I U M</h3>
+        <h4 class="td2"  >HOTEL BOOKING > <span style="color:rgb(148, 148, 148)" >PRCING LAN</span> > <span style="color:rgb(148, 148, 148)" >CONFIRM RESERVATION</span></h4>
+    </div>
+   <div class="img-four">
+    <img class="shadow" src="C:\Users\LT\Desktop\image4.png" alt=""height="100" width="450">
+    </div>
+    <div class="td3"> PLAN YOUR STAY!</div>
+    <p class="text">As Hilton's flagship hotel, Barbaros Bay bodrum is in a <br>quiet location, overlooking Gokova Bay. It provides luxury rooms with private balconies, 2 swimming pools, restaurants with sea views and free Wi-Fi.</p>
+    <div class="check">
+        <b>Check-In</b>
+        <b class="checkout">Check-Out</b> 
+    </div>
+    <i class="bi bi-arrows-angle-expand" ></i>
+    <div class="date" >
+        <i >  <input class="ngay"  type="date" name="bday" max="2050-12-31"></i>
+        <i class="bi bi-record-fill"></i>
+        <i  class="cout"> <input class="ngay" type="date" name="bday" min="2000-01-02" ></i>
+    </div>
+    <div class="per">
+        <b>Persons</b>   
+        <b class="perrom">Rooms</b>
+    </div>
+    <div class="numlec">
+        <button class="btn">
+            <input class="test" onclick="var result = document.getElementById('quantity'); 
+                                            var qty = result.value; 
+                                                if( !isNaN(qty) &amp; qty > 1 ) result.value--;
+                                                    return false;" type='button' value='-' />
+            <input class="test1" type="number" id="quantity" name="quantity"/>
+            <input class="test" onclick="var result = document.getElementById('quantity'); 
+                                            var qty = result.value; 
+                                                if( !isNaN(qty)) result.value++;
+                                                    return false;" type='button' value='+' />
+            </button>
+            <i class="bi bi-record-fill"></i>
+        <select class="select" name="" id="">
+            <option value="">1 Deluxe Room</option>
+            <option value="">2 Deluxe Room</option>
+            <option value="">3 Deluxe Room</option>
+            <option value="">4 Deluxe Room</option>
+            <option value="">5 Deluxe Room</option>
+            <option value="">1 Standard Room</option>
+            <option value="">2 Standard Room</option>
+            <option value="">3 Standard Room</option>
+            <option value="">4 Standard Room</option>
+            <option value="">5 Standard Room</option>
+            <option value="">1 Superior Room</option>
+            <option value="">2 Superior Room</option>
+            <option value="">3 Superior Room</option>
+            <option value="">4 Superior Room</option>
+            <option value="">5 Superior Room</option>
+            <option value="">1 Suite Room</option>
+            <option value="">2 Suite Room</option>
+            <option value="">3 Suite Room</option>
+            <option value="">4 Suite Room</option>
+            <option value="">5 Suite Room</option>
+        </select>
+    </div>
+    <a class="content" href="">
+        <button class="btn5-hover btn5"> 
+            Check Availability
+        </button>
+    </a>
+    <div class="map">
+        <i class="bi bi-geo-alt-fill"></i>
+    </div>
+    <b class="map1">KEMPINSKI HOTEL <br> Barbaros Bay, Turkey </b>
+
+    
+</body>
+</html>
